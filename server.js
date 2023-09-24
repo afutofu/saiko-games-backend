@@ -18,6 +18,8 @@ app.use(express.json());
 
 // API ROUTES
 app.post("/api/games", (req, res) => {
+  console.log("Hit API: ", url, body);
+
   const { url, body } = req.body;
 
   axios
